@@ -1,0 +1,38 @@
+.inputBox {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust the spacing between elements */
+  background-color: #f5f5f5; /* Light gray background */
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 400px; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the input box */
+}
+
+.inputBox input[type="number"] {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  outline: none;
+  width: 100%; /* Take up the available space */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.inputBox select {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  outline: none;
+  background-color: white;
+}
+
+/* Style for the label */
+.inputBox label {
+  white-space: nowrap; /* Prevent the label from wrapping */
+}
+
+/* Optional: Add a focus effect */
+.inputBox input[type="number"]:focus,
+.inputBox select:focus {
+  border-color: #007bff; /* Change to your preferred color */
+}
